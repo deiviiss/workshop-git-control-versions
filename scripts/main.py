@@ -35,6 +35,7 @@ def main():
     df_final["Descripcion"] = df["Descripcion"]
     df_final["Monto"] = df["Monto"]
     df_final["Categoria"] = df["Categoria"]
+    df_final["MontoIva"] = df_final["Monto"] * 0.16  #
 
     # 5. Exportar
     output_path = "output/resultado.xlsx"

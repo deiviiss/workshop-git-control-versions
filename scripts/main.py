@@ -32,7 +32,7 @@ def main():
     # 4. Layout final
     df_final = pd.DataFrame()
     df_final["Id"] = df["Id"]
-    df_final["Descripcion"] = df["Descripcion"]
+    df_final["Descripcion"] = df["descripcion"]
     df_final["Monto"] = df["Monto"]
     df_final["Categoria"] = df["Categoria"]
     df_final["MontoIva"] = df_final["Monto"] * 0.16  #

@@ -22,7 +22,7 @@ def main():
 
     # 2. Limpieza básica
     df_pagos["Descripcion"] = (
-        df_pagos["Descripcion"].astype(str).str.strip().str.upper()
+        df_pagos["Descripcion"].astype(str).str.strip().str.lower()
     )
     df_pagos["Monto"] = pd.to_numeric(df_pagos["Monto"], errors="coerce").fillna(0)
 

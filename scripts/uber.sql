@@ -270,13 +270,13 @@ uber_fee_candidates AS (
         ) AS rn_esp
     FROM
         ban_rest_1 b
+        CROSS JOIN uber_params p
         JOIN exp_rest_1 e ON e.FechaPago = b.FechaPago
         AND ABS(
             ABS(
                 e.ImporteEsperado - b.ImporteBanco
             ) - p.fee_amt
         ) <= p.tol_fee
-        CROSS JOIN uber_params p
 ),
 match_uber_fee AS (
     SELECT
@@ -404,8 +404,6 @@ uber_candidates AS (
             SELECT max_diff
             FROM uber_params
         )
-        JOIN ban_rest_2_count bc ON bc.FechaPago = b.FechaPago
-        JOIN exp_rest_2_count ec ON ec.FechaPago = e.FechaPago
 ),
 match_uber_close AS (
     SELECT

@@ -76,6 +76,48 @@ Durante la sesión vas a:
 
 ---
 
+## ☁️ Trabajo con Repositorios Remotos
+
+En la segunda parte del workshop aprenderemos a conectar nuestro proyecto local con un repositorio remoto en GitHub.
+
+### Flujo básico
+
+1. Volver a la rama principal:
+   ```bash
+   git checkout main
+   ```
+
+2. Verificar conexión remota:
+   ```bash
+   git remote -v
+   ```
+
+3. Traer cambios nuevos:
+   ```bash
+   git pull --rebase
+   ```
+
+4. Crear un repositorio vacío en GitHub.
+
+5. Cambiar el repositorio remoto:
+   ```bash
+   git remote remove origin
+   git remote add origin <repo_url>
+   ```
+
+6. Subir cambios al nuevo repositorio:
+   ```bash
+   git push -u origin main
+   ```
+
+## ¿Qué aprendemos aquí?
+* Diferencia entre repositorio local y remoto.
+* Cómo sincronizar cambios entre máquinas.
+* Cómo conservar commits locales.
+* Cómo publicar proyectos usando GitHub.
+
+---
+
 ## ⚠️ Regla de Oro
 
 **No tengas miedo de romper nada.** El taller se trata precisamente de aprender a volver atrás y entender que Git es tu red de seguridad. 🛡️

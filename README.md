@@ -121,3 +121,5 @@ En la segunda parte del workshop aprenderemos a conectar nuestro proyecto local 
 ## ⚠️ Regla de Oro
 
 **No tengas miedo de romper nada.** El taller se trata precisamente de aprender a volver atrás y entender que Git es tu red de seguridad. 🛡️
+
+Taller concluido

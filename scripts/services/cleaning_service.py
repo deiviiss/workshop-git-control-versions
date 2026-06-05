@@ -1,3 +1,7 @@
+"""
+    limpieza de datos/informacion
+"""
+
 import pandas as pd
 
 def clean_strings(series: pd.Series) -> pd.Series:

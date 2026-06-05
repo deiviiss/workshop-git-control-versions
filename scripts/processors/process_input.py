@@ -3,6 +3,7 @@
 import pandas as pd
 from scripts.services.cleaning_service import clean_strings, clean_numbers
 
+
 def process_data() -> pd.DataFrame:
     """
     Lee archivos, aplica limpieza, realiza merge y construye layout final.
